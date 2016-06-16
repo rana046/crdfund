@@ -1,0 +1,116 @@
+[08-Sep-2015 03:48:51 America/Chicago] PHP Warning:  unlink(addimages/homeICON.jpg): No such file or directory in /home/push4u/public_html/dvalve.org/school/admin/icons.php on line 38
+[08-Sep-2015 03:49:52 America/Chicago] PHP Warning:  unlink(addimages/phoneICON.jpg): No such file or directory in /home/push4u/public_html/dvalve.org/school/admin/icons.php on line 38
+[08-Sep-2015 03:50:48 America/Chicago] PHP Warning:  unlink(addimages/sitemapICON.jpg): No such file or directory in /home/push4u/public_html/dvalve.org/school/admin/icons.php on line 38
+[08-Sep-2015 05:46:39 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/event.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[08-Sep-2015 05:46:57 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/event.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:10:40 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:25:08 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:25:08 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:32:51 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:32:51 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:32:51 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:32:51 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[08-Sep-2015 06:38:29 America/Chicago] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[09-Sep-2015 09:09:35 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[11-Sep-2015 06:14:39 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[17-Sep-2015 07:55:25 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/push4u/public_html/dvalve.org/school/admin/feefoot.php on line 192
+[17-Sep-2015 07:56:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/push4u/public_html/dvalve.org/school/admin/feefoot.php on line 192
+[18-Sep-2015 05:24:28 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[19-Sep-2015 00:35:24 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[19-Sep-2015 00:35:34 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[12-Oct-2015 10:08:02 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[12-Oct-2015 10:21:06 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[12-Oct-2015 10:24:29 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[19-Oct-2015 03:08:19 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[23-Oct-2015 02:04:20 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[23-Oct-2015 02:37:18 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[23-Oct-2015 15:06:10 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/subslider.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[23-Oct-2015 15:06:28 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[28-Oct-2015 03:30:28 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/push4u/public_html/dvalve.org/school/admin/calender.php:1) in /home/push4u/public_html/dvalve.org/school/include/config.php on line 2
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  include(): Failed opening './z_db.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:43:29 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/account.php on line 12
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  include(): Failed opening './z_db.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:43:37 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/account.php on line 12
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  include(): Failed opening './z_db.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:44:47 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/account.php on line 12
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  include(./z_db.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  include(): Failed opening './z_db.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/paydaeco/public_html/member-console/includes/connection.php on line 2
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/header.php on line 67
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_query(): Access denied for user 'paydaeco'@'localhost' (using password: NO) in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_query(): A link to the server could not be established in /home/paydaeco/public_html/member-console/admin/account.php on line 11
+[05-May-2016 07:45:25 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/account.php on line 12
+[06-May-2016 08:41:52 Africa/Johannesburg] PHP Warning:  unlink(addimages/img-1462448311.jpg): No such file or directory in /home/paydaeco/public_html/member-console/admin/account.php on line 28
+[07-May-2016 06:49:27 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 149
+[07-May-2016 07:00:04 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 149
+[07-May-2016 07:01:19 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 07:01:47 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 07:02:04 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 07:06:22 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 07:58:15 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 11:58:15 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[07-May-2016 11:58:16 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/ad_register.php on line 158
+[17-May-2016 13:31:42 Africa/Johannesburg] PHP Fatal error:  Class 'DocxConversion' not found in /home/paydaeco/public_html/member-console/admin/reg_testimonial.php on line 178
+[17-May-2016 13:31:54 Africa/Johannesburg] PHP Fatal error:  Class 'DocxConversion' not found in /home/paydaeco/public_html/member-console/admin/reg_testimonial.php on line 178
+[17-May-2016 13:32:00 Africa/Johannesburg] PHP Fatal error:  Class 'DocxConversion' not found in /home/paydaeco/public_html/member-console/admin/reg_testimonial.php on line 178
+[17-May-2016 13:32:04 Africa/Johannesburg] PHP Fatal error:  Class 'DocxConversion' not found in /home/paydaeco/public_html/member-console/admin/reg_testimonial.php on line 178
+[17-May-2016 13:32:08 Africa/Johannesburg] PHP Fatal error:  Class 'DocxConversion' not found in /home/paydaeco/public_html/member-console/admin/reg_testimonial.php on line 178
+[18-May-2016 13:31:13 Africa/Johannesburg] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/paydaeco/public_html/member-console/admin/donation_bonus_report.php on line 68

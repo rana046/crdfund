@@ -1,0 +1,9 @@
+[12-May-2016 10:39:42 Africa/Johannesburg] PHP Warning:  require(database.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/master/status.php on line 2
+[12-May-2016 10:39:42 Africa/Johannesburg] PHP Warning:  require(database.php): failed to open stream: No such file or directory in /home/paydaeco/public_html/member-console/master/status.php on line 2
+[12-May-2016 10:39:42 Africa/Johannesburg] PHP Fatal error:  require(): Failed opening required 'database.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/paydaeco/public_html/member-console/master/status.php on line 2
+[12-May-2016 12:42:10 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32
+[12-May-2016 12:42:13 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32
+[12-May-2016 12:42:18 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32
+[12-May-2016 12:42:18 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32
+[12-May-2016 12:42:18 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32
+[12-May-2016 12:42:52 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected '"Message"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/paydaeco/public_html/member-console/master/call.php on line 32

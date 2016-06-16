@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{DOCUMENT_ROOT}/member/member-console/maintenance.enable -f
+RewriteRule ^(.*)$ maintenance.html [QSA]
+
+RewriteCond %{DOCUMENT_ROOT}/member/member-console/maintenance.enable !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC]
+RewriteCond %{REQUEST_FILENAME} >""
+RewriteRule ^([^\.]+)$ signup.php?user1=$1 [L]

@@ -1,0 +1,90 @@
+.container {
+    width: 984px;
+}
+
+#txt_search {
+	font-family: Arial,Helvetica,sans-serif;
+   font-size: 12px;
+    color: #000;
+    background-color: #FFF;
+   height: 22px;
+min-width: 440px;
+margin: 5px;
+}
+
+#btn {
+min-width: 89px;
+max-height: 26px;
+background-color: #436057;border-color: #436057;
+}
+
+
+.search-box{
+
+background-color: #E6E6E6;
+height: 38px;
+margin: 46px -15px;
+//margin-top:55px;
+}
+
+.search-box{
+
+background-color: #E6E6E6;
+}
+
+.well {
+
+min-width: 300px;
+float: right;
+padding: 14px;
+}
+
+
+#top_menu {
+    background-image: url('../../images/topMenu.jpg');
+    min-width: 278px;
+    float: right;
+    height: 27px;
+    padding-left: 5px;
+}
+
+.home_TM {
+    background: url('../../images/homeICON.jpg') no-repeat scroll 0% 0% transparent;
+    
+    padding-left: 32px;
+padding-top: 5px;
+//width: 70px;
+height: 27px;
+float: left;
+}
+
+a .home_TM, a .contactus_TM, a .sitemap_TM {
+    font-size: 11px;
+    color: #000;
+    text-decoration: none;
+}
+
+.contactus_TM {
+    background: url('../../images/phoneICON.jpg') no-repeat scroll 0% 0% transparent;
+    
+    padding-left: 32px;
+padding-top: 5px;
+//width: 95px;
+height: 27px;
+float: left;
+
+}
+
+
+.sitemap_TM {
+    font-size: 11px;
+    color: #000;
+    text-decoration: none;
+    
+    padding-left: 32px;
+padding-top: 5px;
+width: 50px;
+height: 27px;
+float: left;
+background: url('../../images/sitemapICON.jpg') no-repeat scroll 0% 0% transparent;
+}
