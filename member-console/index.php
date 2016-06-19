@@ -119,108 +119,44 @@ $errormsg= "
 ?>
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login - <?php echo $settingresult['setting_title'];?></title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+  <body>
   
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="mylifestylewealth Angular Admin Theme">
-    <meta name="author" content="oxedes" >
-    <meta name="msapplication-TileColor" content="#9f00a7">
-    <meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="black">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="assets/img/favicon/manifest.json">
-    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
-    <title>Login - <?php echo $settingresult['setting_title'];?></title>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  <![endif]-->
-    <link href="assets/css/vendors.min.css" rel="stylesheet" />
-    <link href="assets/css/styles.min.css" rel="stylesheet" />
-    <script charset="utf-8" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-
-
-  </head>
-  <body scroll-spy="" id="top" class=" theme-template-dark theme-pink alert-open alert-with-mat-grow-top-right">
-    <main style='padding-left:0px;'>
-       </aside>
-       <style type="text/css">
-       .main-container
-       {
-margin-top:10%;       
-       }
-       </style>
-<div class="main-container">
-<section id="content" class="m-t-lg wrapper-md animated fadeInUp" style="widht:50%;margin:auto;">
-  <div class="container aside-xl" style="    width: 100%;"> <a class="navbar-brand block" href="index.php"></a>
-    <section class="m-b-lg">
-      <header class="wrapper text-center">
-	  <div id="logo_section" style="text-align:center">
-		<img src="images/login_logo.png" alt="Logo" style="width:230px;" />
-	</div>
-       <strong>Sign in to see stats </strong> 
-       </header>
-      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "utf-8"); ?>" method="post">
-        <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-        <div class="list-group">
-		<?php 
+  <!-- multistep form -->
+		<form id="msform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "utf-8"); ?>" method="post">
+			<!-- progressbar -->
+			<ul id="progressbar">
+				<li class="active">Login Details</li>
+				<li>Mobile</li>
+				<li>Pin Number</li>
+			</ul>
+			<!-- fieldsets -->
+			<?php 
 						if($_SERVER['REQUEST_METHOD'] == 'POST' && ($errormsg!=""))
 						{
 						print $errormsg;
 						}
 						?>
-          <div class="list-group-item">
-            <input type="text" placeholder="Username" class="form-control no-border" name="username" required>
-          </div>
-          <div class="list-group-item">
-            <input type="password" placeholder="Password" class="form-control no-border" name="password" required>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
-        <div class="text-center m-t m-b"><a href="forgotpassword.php"><small style="color:black;">Forgot password?</small></a> </div>
-        <div class="line line-dashed"></div>
-        <p class="text-center m-t m-b"><a href="#"><small style="color:black;">Don't Have Account?</small></a></p>
-        <a href="signup.php" class="btn btn-lg btn-default btn-block">Create an account</a>
-        
-        </div></div>
-      </form>
-    </section>
-  </div>
-</section>
-</div>
-<footer id="footer">
-  <div class="text-center padder">
-    <p style="text-align:center;"> 
-    <small style="color:black; margin:auto;" class="text-center">
-    </small> </p>
-  </div>
-</footer>
-<!-- / footer -->
-<!-- Bootstrap -->
+			<fieldset>
+				<h2 class="fs-title">Login Details</h2>
+				<h3 class="fs-subtitle">This is step 1</h3>
+				<input type="text" name="username" placeholder="Username" />
+				<input type="password" name="password" placeholder="Password" />
+				<input type="submit" name="next" class="next action-button" value="Next" />
+			</fieldset>
+		</form>
+
 <!-- App -->
-<script src="js/app.v1.js"></script>
-<script src="js/app.plugin.js"></script>
-      <!-- ngInclude:  -->
+<script src='js/jquery.min.js'></script>
+<script src='js/jquery.easing.min.js'></script>		
 	  
-	  <div ng-include="" src="'assets/tpl/partials/topnav.php'" class="ng-scope">
-
-</div>
-
-<div class="main-content ng-scope" autoscroll="true" ng-view="" bs-affix-target="">
 
   </body>
 
