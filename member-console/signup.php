@@ -67,7 +67,7 @@ $email=mysql_real_escape_string($_POST['email']);
 
 $mobile=mysql_real_escape_string($_POST['mobile']);
 $ref=mysql_real_escape_string($_POST['referral']);
-$address=mysql_real_escape_string($_POST['address']);
+/*$address=mysql_real_escape_string($_POST['address']);*/
 $country=mysql_real_escape_string($_POST['country']);
 $country_code =mysql_real_escape_string($_POST['country_code']);
 $package=mysql_real_escape_string($_POST['package']);
@@ -138,9 +138,9 @@ if ( strlen($password) < 8 ){
 $msg=$msg."Password Must Be More Than 8 Char Length.<BR>";
 $status= "NOTOK";}	
 
-if ( strlen($address) < 1 ){
+/*if ( strlen($address) < 1 ){
 $msg=$msg."Not Available<BR>";
-}
+}*/
 
 if ( strlen($mobile) > 10 ){
 $msg=$msg."Please Enter Correct Mobile Number<BR>";
@@ -179,6 +179,29 @@ $ip = ip2long($ip);
 
 if ($status=="OK") 
 {
+
+$address = "";
+if($_REQUEST['streetNo'] != "") {
+	$address .= $_REQUEST['streetNo'];
+}
+if($_REQUEST['streetName'] != "") {
+	$address .= ",".$_REQUEST['streetName'];
+}
+if($_REQUEST['city'] != "") {
+	$address .= ",".$_REQUEST['city'];
+}
+if($_REQUEST['suburbOrTown'] != "") {
+	$address .= ",".$_REQUEST['suburbOrTown'];
+}
+if($_REQUEST['stateOrProvinceOrDistrict'] != "") {
+	$address .= ",".$_REQUEST['stateOrProvinceOrDistrict'];
+}
+if($_REQUEST['zipOrPostalCode'] != "") {
+	$address .= ",".$_REQUEST['zipOrPostalCode'];
+}
+
+
+
 $scode=rand(1111111111,9999999999); //generating random code, this will act as signup key
 
 $bonus=mysql_fetch_array(mysql_query("select * from packages where packages_id='".$_REQUEST['package']."'"));
@@ -193,7 +216,6 @@ $query_banking="INSERT INTO don_list (id,user_id, name, lastname, bank, amount, 
 VALUES ('".rand()."', $lastid1, '$username', '$name', '$bank_name', '$donation', '$bank_name', '$card_holder', '$account_number', '', '$branch', '$branch_code')";
 if ($con_don->query($query_banking) === TRUE) {
 	$con_don->close();
-	echo "executed succesfully";
 } else {
     echo "Error: " . $sql . "<br>" . $con_don->error;
 }
@@ -313,149 +335,95 @@ $errormsg= "
 ?>
 
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="mylifestylewealth Angular Admin Theme">
-    <meta name="author" content="oxedes" >
-    <meta name="msapplication-TileColor" content="#9f00a7">
-    <meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="assets/img/favicon/manifest.json">
-    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
-    <title>Userprofile - <?php echo $settingresult['setting_title'];?></title>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>  <![endif]-->
-    <link href="assets/css/vendors.min.css" rel="stylesheet" />
-    <link href="assets/css/styles.min.css" rel="stylesheet" />
-    <script charset="utf-8" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-</head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Userprofile - <?php echo $settingresult['setting_title'];?></title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<style>
+			#progressbar li {
+				width: 16.16%;
+			}
+		</style>
+	</head>
   <body>
-
-<div class="main-container">
-<section id="content" >
-	
-  <div class="container aside-xl"> 
-  <div id="logo_section" style="text-align:center">
-		<img src="images/login_logo.png" alt="Logo" style="width:230px;" />
-	</div>
-  <a class="navbar-brand block" href="#" style="    color: #e91e63;">Great Decision... ;)</a>
-  <div class="row">
-                <div class="col-sm-18">
-                  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "utf-8"); ?>" method="post" data-validate="parsley">
-                    <section class="panel panel-default">
-                      
-					  <div class="page-header" style="    margin: -24px 0 40px;"><br><br>
-    <h1>
-      <i class="md md-input"></i>
-    Register
-    </h1>
-  </div>
-                      <div class="panel-body">
-					  
-                        <p class="text-muted">Please fill the information to continue</p>
-						<?php 
-						if($_SERVER['REQUEST_METHOD'] == 'POST' && ($status=="NOTOK"))
+<!-- multistep form -->
+		<form id="msform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "utf-8"); ?>" method="post">
+			<!-- progressbar -->
+			<ul id="progressbar">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<?php
+			if($_SERVER['REQUEST_METHOD'] == 'POST' && ($status=="NOTOK"))
 						{
 						print $errormsg;
 						}
-						?>
-						
+			?>
+			<!-- fieldsets -->
+			<fieldset>
+				<h2 class="fs-title">Account Details</h2>
+				<h3 class="fs-subtitle">This is step 1</h3>
+				<input type="email" name="email" id="email" placeholder="Email" />
+				<input type="text" name="username" id="username" placeholder="Username" />
+				<input type="password" name="password" id="password" placeholder="Password" />
+				<input type="password" name="password2" id="password2" placeholder="Confirm Password" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<?php 
+				if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+					$ip = $_SERVER['HTTP_CLIENT_IP'];
+				} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+					$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+				} else {
+					$ip = $_SERVER['REMOTE_ADDR'];
+				}
 
-						
-						<input type="hidden" name="todo" value="post">
-						<div class="form-group pull-in clearfix">
-                        <div class="col-sm-6">
-                          <label>Username</label>
-                          <input type="text" class="form-control" data-required="true" name="username" value="" required>                        
-                        </div>
-                        <div class="col-sm-6">
-                          <label>Full Name</label>
-                         <input type="text" class="form-control" data-required="true" name="fname" required>                          
-                        </div>
-						</div>
-                        <div class="form-group pull-in clearfix">
-                          <div class="col-sm-6">
-                            <label>Enter password</label>
-                            <input type="password"  class="form-control" data-required="true" id="pass1" name="password" required>   
-                          </div>
-                          <div class="col-sm-6">
-                            <label>Confirm password</label>
-                            <input type="password" class="form-control" id="pass2" data-equalto="#pwd" data-required="true" name="password2" required>      
-                          </div>
-                          <span data-ng-show="myForm.emailReg2.$error.match">Passwords have to match!</span>   
-                        </div>
-						<div class="form-group pull-in clearfix">
-						<div class="col-sm-6">
-                          <label>Email</label>
-                          <input type="email" class="form-control" data-type="email" data-required="true" name="email" required>                        
-                        </div>
-						<div class="col-sm-6">
-                          <label>Phone</label>
-                          <input type="text" class="form-control" data-type="phone" placeholder="(XXX) XXXX XXX" data-required="true" name="mobile" required>
-                        </div>
-						</div>
-						
-                        <div class="form-group">
-                          <label>Address</label>
-                          <input type="text" class="form-control" data-required="true" name="address">
-                        </div>
-						
-						<div class="form-group">
-						<label>Country</label>
-	
-                            <select data-required="true" class="form-control m-t" name="country" required>
-                                <option value="">Please choose</option>
-                               	<?php 
-	$id1=mysql_query("SELECT * FROM country");
-while($country=mysql_fetch_array($id1)) {
-
-                                              
-                                          
-	?>
-
-	<option value="<?php echo $country['nicename']; ?>"> <?php echo $country['nicename']; ?></option>
-	<? }?>
-</select>
-                        </div>
-						
-						<div class="form-group">
-						<label>Country Code</label>
-	
-                            <select data-required="true" class="form-control m-t" name="country_code" required>
-                                <option value="">Please choose</option>
-                               	<?php 
-	$id1=mysql_query("SELECT * FROM country");
-while($country=mysql_fetch_array($id1)) {
-
-                                              
-                                          
-	?>
-
-	<option value="<?php echo $country['phonecode']; ?>"> <?php echo $country['phonecode']; ?></option>
-	<? }?>
-</select>
-                        </div>
-						
-						  <div class="form-group">
-						<label>Package</label>
-                            <select  class="form-control m-t selectChange" id="package" name="package" required>
+				$details = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip={$ip}"));
+				$country = $details->geoplugin_countryName;
+				$phone_code = "";
+				if($country != "") {
+					$id1=mysql_query("SELECT * FROM country where nicename = '".$country."'");
+					$country_result = mysql_fetch_object($id1);
+					$phone_code = $country_result->phonecode;
+				}
+			
+			?>
+			<fieldset>
+				<h2 class="fs-title">Personal Details</h2>
+				<h3 class="fs-subtitle">This is step 2</h3>
+				<input type="text" name="fname" placeholder="Full Name" />
+				<!--<input type="text" name="surname" placeholder="Surname" />-->
+				<input type="text" name="id_passport_number" id="id_passport_number" placeholder="ID/Passport" />
+				<input type="text" name="streetNo" placeholder="Street No" />
+				<input type="text" name="streetName" placeholder="Street Name" />
+				<input type="text" name="city" placeholder="city" />
+				<input type="text" name="suburbOrTown" placeholder="Suburb/Town" />
+				<input type="text" name="country" placeholder="Country" value="<?php echo $country; ?>" />
+				<input type="text" name="stateOrProvinceOrDistrict" placeholder="State/Province/District" />
+				<input type="text" name="zipOrPostalCode" placeholder="Zip/Postal Code" />
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Mobile Details</h2>
+				<h3 class="fs-subtitle">This is step 3</h3>
+				<input type="text" name="mobile" placeholder="Mobile Number" />
+				<input type="text" name="country_code" placeholder="Network Operator" value="<?php echo $phone_code; ?>" />
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Membership Plan</h2>
+				<h3 class="fs-subtitle">This is step 4</h3>
+				<select  class="form-control m-t selectChange" id="package" name="package" required>
                                 
 								<?php $query="SELECT * FROM  packages where packages_status=1"; 
  
@@ -477,159 +445,43 @@ while($row = mysql_fetch_array($result))
 							</select>
 								<input type="hidden" id="l1"  value="">
 								<input type="hidden" id="l2"  value="">
-                          </div>
-                         <div class="form-group">
-                         <label>How Much Do You Want To Donate?</label>
-                          <input type="text" class="form-control" id="donation" value="" name="donation" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                        </div>
-						  <div class="form-group">
-                         	<label>ID/Passport Number</label>
-                          <input type="text" class="form-control" id="id_passport_number" value="" name="id_passport_number" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
-						  <div class="form-group">
-                         	<label>Bank Name</label>
-                          <input type="text" class="form-control" id="bank_name" value="" name="bank_name" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
-						  <div class="form-group">
-                         	<label>Card Holder</label>
-                          <input type="text" class="form-control" id="card_holder" value="" name="card_holder" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
-						  <div class="form-group">
-                         	<label>Branch</label>
-                          <input type="text" class="form-control" id="branch" value="" name="branch" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
-						  <div class="form-group">
-                         	<label>Account Number</label>
-                          <input type="text" class="form-control" id="account_number" value="" name="account_number" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
-						  <div class="form-group">
-                         	<label>Branch Code</label>
-                          <input type="text" class="form-control" id="branch_code" value="" name="branch_code" required="" >
-                          <div >
-									<span  class="msg" style="color:red"></span>
-                          </div>
-                          </div>
+				<input type="number" placeholder="Donation Amount" id="donation" value="" name="donation" required="required"  onkeypress="return isNumberKey(event)">
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Bank Details</h2>
+				<h3 class="fs-subtitle">This is step 5</h3>
+				<input type="text" name="bank_name" placeholder="Bank Name" />
+				<input type="text" name="card_holder" placeholder="Cardholder" />
+				<input type="text" name="account_number" placeholder="Account Number" />
+				<input type="text" name="branch" placeholder="Branch" />
+				<input type="text" name="branch_code" placeholder="Branch Code" />
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+			<fieldset>
+				<h2 class="fs-title">Sponsors/Referral Details</h2>
+				<h3 class="fs-subtitle">This is step 6</h3>
+				<input type="text" name="referral" placeholder="Username/Link" />
+				<input style="width:12px" type="checkbox" name="check" /> I agree to the terms of services<br>
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="hidden" name="todo" value="post">
+				<input type="submit" name="submit" class="next action-button" value="Submit" />
+			</fieldset>
+		</form>
 
-
-<?php 
-			if(isset($_GET["aff"])){
-			$aff=mysql_real_escape_string($_GET["aff"]);
-			$_SESSION['aff'] = $aff;
-			
-			
-
-	}		
-	
-	
-	// get referal user name
-	
-	$ref_select = "select * from users";
-	$ref_result = mysql_query($ref_select);
-	$ref_count = mysql_num_rows($ref_result); 
-			if($ref_count == 0) {
-			?>
-			<div class="form-group">
-                          <label>Sponsor/Referral Username</label>
-                          <input type="text" class="form-control" name="referral" value="<?php if (isset($_SESSION['aff'])){
-			echo $_SESSION['aff']; } ?>"  required="required" >                        
-                        </div>
-
-<?php
-			}
-			else if(isset($_REQUEST['user1'])) 
-			{
-				$select_users=mysql_query("select * from users where users_name='".$_REQUEST['user1']."'");
-    $row_users=mysql_fetch_array($select_users);
-
-$users_name=$row_users['users_name'];
-
-if(!isset($users_name)){
-
-
-    
-  echo "<script>window.location='index.php'</script>";
-
-    
-}
-?>
-
-		<div class="form-group">
-                          <label>Sponsor/Referral Username</label>
-                          <input type="text" class="form-control"  name="referral" value="<?php echo $_REQUEST['user1']; ?>"  required="required" >                        
-                        </div>
-
-
-<?php
-			}
-			else {
-				$last_select = "select * from users ORDER BY users_id DESC LIMIT 1";
-				$last_result = mysql_query($last_select);
-				$last_record = mysql_fetch_array($last_result);
-?>
-								<div class="form-group">
-                          <label>Sponsor/Referral Username</label>
-                          <input type="text" class="form-control"  name="referral" value="" >                        
-                        </div>
-                        
-<?php
-			}
-?>
-
-							<div class="checkbox i-checks">
-                          <label>
-                            <input type="checkbox" name="check" data-required="true" required><i></i> I agree to the <a href="../terms_condition.html" target="_blank" class="text-info">Terms of Service</a>
-                          </label>
-                        </div>
-                        
-                      </div>
-                      <footer class="panel-footer text-right bg-light lter">
-                       
-                      </footer>
-                    </section>
-					<div class="line line-dashed"></div>
-          <p class="text-muted text-center"><small style="color:black;"> <button type="submit" class="btn btn-success btn-s-xs">Register</button><br><br><br>Already have an account?</small></p>
-          <a href="index.php" class="btn btn-lg btn-default btn-block">Sign in</a>
-                  </form>
-                </div>
-                
-    </div>
-  </div>
-</section>
-</div>
-<!-- footer -->
-
-<!-- / footer -->
-<!-- Bootstrap -->
-<!-- App -->
-<script src="js/app.v1.js"></script>
-<script src="js/app.plugin.js"></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/jquery.easing.min.js'></script>
 <script type="text/javascript">
 $(document).ready(function () {
 	
-	 	var package =$("#package").val();
+	 	var package = $("#package").val();
 			  $.ajax({
       type: "POST",
       url: "ajax1.php?package="+package+"&field="+"price",
           success:function(res1){
-          	var l1 =res1;
+          	var l1 = res1;
           	$("#l1").val(l1);
          // alert(res1);
               
@@ -700,8 +552,17 @@ $("#donation").val('');
 
  });   	
 
-
-
 </script>
+<script>
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}
+</script>
+
+<script src="js/index.js"></script>	
+
   </body>
-  </html>
+</html>
